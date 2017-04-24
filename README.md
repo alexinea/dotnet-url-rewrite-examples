@@ -47,8 +47,30 @@
 
 项目：`src\UrlWrite.AspNetCore`
 
- 
+NuGet 安装：
+
+```
+PM> install-package Wangkanai.Responsive -pre
+```
+
+在 `ConfigureServices` 方法中配置：
+```
+services.AddResponsive()
+        .AddViewSuffix()
+        .AddViewSubfolder();
+```
+
+在 `Configure` 方法中使用中间件：
+```
+app.UseResponsive();
+```
+
+`ASP.NET Core Responsive` 会根据你设备的种类调用不同的视图：
+
++ 如果使用的是 `AddViewSuffix()`，则路径形如 `views/[controller]/[action]/index.mobile.cshtml` 
++ 如果使用的是 `AddViewSubfolder（）`，则路径形如 `views/[controller]/[action]/mobile/index.cshtml`
 
 推荐阅读：
 
 + [URL Rewriting Middleware in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/url-rewriting)
++ [ASP.NET Core Responsive](https://github.com/wangkanai/Responsive)
