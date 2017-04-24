@@ -10,6 +10,8 @@
     <OutputTypeEx>exe</OutputTypeEx>
     <StartupObject />
     <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
+    <RootNamespace>UrlRewrite.AspNetCore</RootNamespace>
+    <AssemblyName>UrlRewrite.AspNetCore</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

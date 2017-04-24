@@ -8,7 +8,7 @@
 
 ***
 
-### ASP.NET URLWrite
+### ASP.NET URL Rewrite
 
 项目：`src\UrlWrite.AspNet`
 
@@ -43,9 +43,9 @@
 
 ***
 
-### ASP.NET Core URLWrite
+### ASP.NET Core URL Rewrite
 
-项目：`src\UrlWrite.AspNetCore`
+项目：`src\UrlRewrite.AspNetCore`
 
 NuGet 安装：
 
