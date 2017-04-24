@@ -5,15 +5,6 @@ using UrlRewrite.AspNet.Browser;
 
 namespace UrlRewrite.AspNet.HttpMoudle
 {
-    /*
-     * HttpModule
-     * Rewrite Module for IIS 7+
-     *
-     * Alex.Daniel.Lewis
-     * 2014-11-12
-     *
-     * */
-
     public class UrlRewriteModule : IHttpModule, IRequiresSessionState
     {
         protected BrowserModel Browser { get; set; }

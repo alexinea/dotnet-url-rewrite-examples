@@ -125,16 +125,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IHttpMoudle\UrlRewriteExtension.cs" />
-    <Compile Include="IHttpMoudle\UrlRewriteModule.cs" />
+    <Compile Include="HttpMoudle\UrlRewriteExtension.cs" />
+    <Compile Include="HttpMoudle\UrlRewriteModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="mobile\demo.js" />
     <Content Include="mobile\hello.html" />
     <Content Include="mobile\index.html" />

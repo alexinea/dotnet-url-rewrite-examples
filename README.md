@@ -1,6 +1,6 @@
-#ASP.NET UrlWrite 样例
+# ASP.NET UrlWrite 样例
 
-###问题
+### 问题
 
 现有 `pc` 和 `mobile` 两文件夹（其文件夹内的结构也不同），根据用户的设备类型自动选择显示 pc 版或 mobile 版。
 
@@ -16,11 +16,14 @@
 
 `web.config` 的改动：
 
-0. 在 `system.webServer:modules` 内增加配置：
+在 `system.webServer:modules` 内增加配置：
+
 ```
 <add name="UrlRewriter" type="UrlRewrite.AspNet.HttpMoudle.UrlRewriteModule" />
 ```
-1. 在 `system.webServer:handlers` 内增加配置：
+
+在 `system.webServer:handlers` 内增加配置：
+
 ```
 <remove name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" />
 <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
@@ -33,3 +36,19 @@
 <add name="Rewriter-32" path="*" verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework\v4.0.30319\aspnet_isapi.dll" resourceType="Unspecified" requireAccess="None" preCondition="classicMode,runtimeVersionv4.0,bitness32" />
 <add name="Rewriter-64" path="*" verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework\v4.0.30319\aspnet_isapi.dll" resourceType="Unspecified" requireAccess="None" preCondition="classicMode,runtimeVersionv4.0,bitness64" />
 ```
+
+推荐阅读：
+
++ [Bikeman868/UrlRewrite.Net](https://github.com/Bikeman868/UrlRewrite.Net)
+
+***
+
+### ASP.NET Core URLWrite
+
+项目：`src\UrlWrite.AspNetCore`
+
+ 
+
+推荐阅读：
+
++ [URL Rewriting Middleware in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/url-rewriting)

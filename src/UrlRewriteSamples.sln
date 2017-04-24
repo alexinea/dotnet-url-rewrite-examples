@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlRewrite.AspNet", "UrlRewrite.AspNet\UrlRewrite.AspNet.csproj", "{D7F94FD6-B4B6-4EE3-8BDC-17202E7F8444}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlWrite.AspNetCore", "UrlWrite.AspNetCore\UrlWrite.AspNetCore.csproj", "{679B3396-D599-4F8F-9C33-9E852B024D8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D7F94FD6-B4B6-4EE3-8BDC-17202E7F8444}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7F94FD6-B4B6-4EE3-8BDC-17202E7F8444}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7F94FD6-B4B6-4EE3-8BDC-17202E7F8444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679B3396-D599-4F8F-9C33-9E852B024D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679B3396-D599-4F8F-9C33-9E852B024D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679B3396-D599-4F8F-9C33-9E852B024D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679B3396-D599-4F8F-9C33-9E852B024D8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
